@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SimpleFactoryPatten.Animal;
+using SimpleFactoryPatten.Factory;
+using System;
 
 namespace SimpleFactoryPatten
 {
@@ -10,6 +8,13 @@ namespace SimpleFactoryPatten
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("This is a simple factory pattern demo");
+            IAnimal animal = null;
+            ISimpleFactory simpleFactory = new SimpleFactory();
+            animal = simpleFactory.Create();
+            animal.Speak();
+            animal.Action();
+            Console.Read();
         }
     }
 }
