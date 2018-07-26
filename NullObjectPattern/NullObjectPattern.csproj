@@ -42,8 +42,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Bus.cs" />
+    <Compile Include="Entities\NullVehicle.cs" />
+    <Compile Include="Entities\Train.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vehicle\IVehicle.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
